@@ -53,10 +53,8 @@ namespace Reverse
 
             orderedNumber.Sort();
 
-            if (!increasing)
-            {
-                orderedNumber = Reverse(orderedNumber);
-            }
+            orderedNumber = (!increasing) Reverse(orderedNumber) ? orderedNumber;
+
 
             return orderedNumber;
         }
